@@ -4,7 +4,8 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<h1 style="color:blue;">This is a Blue Heading Test</h1>
+	<!-- h1 is the unused main header-->
+	<!--<h1 style="color:blue;">This is a Blue Heading</h1>-->
 	<h2>
 		Welcome to {SITE_TITLE}
 	</h2>
@@ -18,22 +19,25 @@ import { SITE_TITLE } from '../consts';
 </header>
 <style>
 	header {
+		overflow:hidden;
 		width:100%;
-		height: 120px;
+		height: 60px;
 		text-align: center;
 		background-color:black
 	}
-	h1{
-		margin:0;
-	}
-
 	h2 {
-		margin: 0;
+		color:white;
+		float:left;
+		margin-top: 0.5em;
+	}
+	nav {
+		float:right;
+		margin-top: 1em;
 	}
 </style>
 <style type='text/css'>
 	body {
 		padding:0;
 		height:150%;
-    	background-color: yellow
+    	background-color:white;
   }
